@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empire Express</title>
+    <!-- setUP -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body class="raleway">
+    <header class="w-[1171px] mx-auto mt-8 ">
+        <!-- nav bar section -->
+        <section class="nav-bar">
+            <div class="navbar  ">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                            <li><a>Item 1</a></li>
+                            <li>
+                                <a>Parent</a>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a>Item 3</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-4xl font-extrabold text-[#030712]">E-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 font-medium text-[#030712B2] text-lg">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn text-[#1DD100] bg-[#1DD1001A] border border-[#1DD10066] rounded-xl text-xl font-bold">Bus
+                        <span><img src="images/bus-icon.png" alt="" srcset=""></span></a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Hero section -->
+        <section class="hero-section mt-9 ">
+            <div class="hero bg-[url(images/banner.png)] min-h-[550px]">
+                <div class="hero-content text-center">
+                    <div class="max-w-3xl">
+                        <h1 class="text-6xl font-extrabold text-white">End-to-End Travel with <br>
+                            <span class="light-green">Empire Express</span>
+                        </h1>
+                        <p class="py-6 inter text-white">
+                            Each journey brings its own story, turning ordinary moments into unforgettable
+                            experiences,turning ordinary moments into unforgettable experiences. <br>
+                            <button class="btn font-bold  border-none rounded-xl  bg-[#1DD100] mt-10 text-[#030712]">Buy
+                                Tickets</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </header>
+    <main>
+        <!-- offer section -->
+        <section class="w-[1171px] mx-auto flex flex-col items-center  mt-20 mb-32">
+
+            <h1 class=" text-[#030712] font-bold text-4xl mb-16">Best offers for you</h1>
+
+            <!-- card container -->
+            <div class=" flex gap-9 ">
+
+                <!-- card1 -->
+                <div>
+
+                    <div class="card bg-[#FFBF0F] text-primary-content w-[573px] inter text-[#030712] rounded-3xl">
+                        <div class=" flex justify-between p-12 items-center">
+                            <div class="space-y-2">
+                                <h2 class="card-title font-black text-4xl">15% OFF</h2>
+                                <p class=" text-xl ">on your next purchase</p>
+                                <p class="text-[#03071280] text-lg">use by January 2024</p>
+                            </div>
+                            <div class="space-y-2 ">
+                                <h2 class="text-3xl font-semibold">NEW 15</h2>
+                                <p class="text-lg text-[#03071280]">Coupon Code</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <img class="w-10 absolute bottom-[-425px] left-[400px]
+               " src="images/info-devider.png" alt="" srcset="">
+                </div>
+                <!-- card2 -->
+                <div>
+
+                    <div class="card bg-[#F78C9C] text-primary-content w-[573px] inter text-[#030712] rounded-3xl">
+                        <div class=" flex justify-between p-12 items-center">
+                            <div class="space-y-2">
+                                <h2 class="card-title font-black text-4xl">20% OFF</h2>
+                                <p class=" text-xl ">on your next purchase</p>
+                                <p class="text-[#03071280] text-lg">use by January 2024</p>
+                            </div>
+                            <div class="space-y-2 ">
+                                <h2 class="text-3xl font-semibold">Couple 20</h2>
+                                <p class="text-lg text-[#03071280]">Coupon Code</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <img class="w-10 absolute bottom-[-425px] left-[1000px]
+               " src="images/info-devider.png" alt="" srcset="">
+                </div>
+
+            </div>
+
+            <button class="btn mt-14 light-green border bg-[#F7F8F8] border-[#1DD100] rounded-xl  font-bold ">See All
+                Offers</button>
+
+
+
+        </section>
+        <!-- ticketing section-->
+        <section class="bg-[#F7F8F8] border-t-2 border-[#1DD100] rounded-t-[88px]
+        ">
+            <!-- title section -->
+            <div class="flex flex-col items-center mb-12 mt-[120px]">
+                <h1 class="text-[#030712] font-bold text-4xl">Empire Express</h1>
+                <p class="mt-6 text-[#03071299] inter">Each journey weaves a unique story, turning fleeting moments into
+                    timeless , <br> <span class="ml-12">In the quiet pauses, we discover beauty that lasts
+                        forever.</span></p>
+            </div>
+            <!-- ticket print section -->
+
+            <div
+                class="w-[1170px] min-h-[418px] border mx-auto bg-white rounded-3xl flex gap-[134px] p-10 items-center">
+
+                <div>
+
+                    <!-- nav part -->
+
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center gap-4">
+                            <img src="images/bus-logo.png" alt="">
+                            <div class="space-y-1">
+                                <h1 class="text-[#030712] text-[32px] font-bold">Greenline Paribahan</h1>
+                                <p class="inter text-lg font-normal text-[#03071299]">Coach-009-WEB ! AC_Business</p>
+                            </div>
+
+                        </div>
+
+                        <div class="w-[180px] h-[56px] bg-[#1DD10026] flex p-5 items-center justify-between rounded-xl">
+                            <img src="images/seat-green.png" alt="">
+                            <p class="light-green text-lg font-medium inter">40 Seats left</p>
+
+                        </div>
+                    </div>
+                    <!-- route part -->
+
+                    <div class="w-[808px] h-[258px] rounded-3xl bg-[#F7F8F8] space-y-12 p-10 mt-4">
+                        <div
+                            class="text-lg flex justify-between items-center border-b-1 border-[#03071233] border-dashed ">
+                            <p>Route</p>
+                            <p>Dhaka - Sylhet</p>
+                        </div>
+
+                        <div
+                            class="text-lg flex justify-between items-center border-[#03071233] border-dashed border-b-1  ">
+                            <p>Departure Time</p>
+                            <p>9:00 PM</p>
+                        </div>
+
+                        <div class="flex justify-between">
+                            <button class="btn ">Boarding Point - Laxmipur</button>
+                            <button class="btn">Dropping Point - Bogura</button>
+                            <button class="btn">Est. Time - 11 Hour</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ticket Amount part -->
+                <div class="flex flex-col justify-center items-center gap-8">
+                    <img src="images/fare.png" alt="">
+                    <p class="text-[#030712] text-3xl font-bold">550 Taka <br> <span
+                            class=" text-2xl text-[#03071299] font-semibold ml-4">
+                            Per Seat
+                        </span>
+                    </p>
+                </div>
+
+
+
+
+            </div>
+
+            <!-- function section -->
+             <div class="w-[1170px] mx-auto bg-white flex justify-between  p-10 mt-6 ">
+                <!-- sit part -->
+                <div class="">
+                    <h1 class="font-semibold text-2xl mb-6">Select Your Seat</h1>
+    
+                    <div class="flex  border-t-1 border-dashed justify-between items-center ">
+                        <p class="text-[#03071280] font-semibold my-10">Available</p>
+    
+                        <img src="images/seat-green-filled.png" alt="">
+                    </div>
+    
+                    <!-- keyBoard -->
+    
+                    <div class="space-y-4">
+                        <!-- keyA -->
+    
+                        <div class="inter grid grid-cols-5 gap-2">
+                            <p>A</p>
+                            <button class="btn py-4 px-10 rounded-xl text-[#03071280]">A1</button>
+                            <button class="btn py-4 px-10 rounded-xl text-[#03071280]">A2</button>
+                            <button class="btn py-4 px-10 rounded-xl text-[#03071280]">A3</button>
+                            <button class="btn py-4 px-10 rounded-xl text-[#03071280]">A4</button>
+    
+                        </div>
+                        <!-- b -->
+                        <div class="inter grid grid-cols-5 gap-2">
+                            <p>A</p>
+                            <button id="B1" class="btn py-4 px-10 rounded-xl text-[#03071280]">B1</button>
+                            <button id="B2" class="btn py-4 px-10 rounded-xl text-[#03071280]">B2</button>
+                            <button id="B3" class="btn py-4 px-10 rounded-xl text-[#03071280]">B3</button>
+                            <button id="B4" class="btn py-4 px-10 rounded-xl text-[#03071280]">B4</button>
+                        </div>
+                        <!-- C -->
+                        <div class="inter grid grid-cols-5 gap-2">
+                            <p>C</p>
+                            <button id="C1" class="btn py-4 px-10 rounded-xl text-[#03071280]">C1</button>
+                            <button id="C2" class="btn py-4 px-10 rounded-xl text-[#03071280]">C2</button>
+                            <button id="C3" class="btn py-4 px-10 rounded-xl text-[#03071280]">C3</button>
+                            <button id="C4" class="btn py-4 px-10 rounded-xl text-[#03071280]">C4</button>
+                        </div>
+                        <!-- D -->
+                        <div class="inter grid grid-cols-5 gap-2">
+                            <p>D</p>
+                            <button id="D1" class="btn py-4 px-10 rounded-xl text-[#03071280]">D1</button>
+                            <button id="D2" class="btn py-4 px-10 rounded-xl text-[#03071280]">D2</button>
+                            <button id="D3" class="btn py-4 px-10 rounded-xl text-[#03071280]">D3</button>
+                            <button id="D4" class="btn py-4 px-10 rounded-xl text-[#03071280]">D4</button>
+                        </div>
+                        <!-- E -->
+                        <div class="inter grid grid-cols-5 gap-2">
+                            <p>A</p>
+                            <button id="E1" class="btn py-4 px-10 rounded-xl text-[#03071280]">E1</button>
+                            <button id="E2" class="btn py-4 px-10 rounded-xl text-[#03071280]">E2</button>
+                            <button id="E3" class="btn py-4 px-10 rounded-xl text-[#03071280]">E3</button>
+                            <button id="E4" class="btn py-4 px-10 rounded-xl text-[#03071280]">E4</button>
+                        </div>
+                        <!-- F -->
+                        <div class="inter grid grid-cols-5 gap-2">
+                            <p>A</p>
+                            <button id="F1" class="btn py-4 px-10 rounded-xl text-[#03071280]">F1</button>
+                            <button id="F2" class="btn py-4 px-10 rounded-xl text-[#03071280]">F2</button>
+                            <button id="F3" class="btn py-4 px-10 rounded-xl text-[#03071280]">F3</button>
+                            <button id="F4" class="btn py-4 px-10 rounded-xl text-[#03071280]">F4</button>
+                        </div>
+                        <!-- G -->
+                        <div class="inter grid grid-cols-5 gap-2">
+                            <p>A</p>
+                            <button id="G1" class="btn py-4 px-10 rounded-xl text-[#03071280]">G1</button>
+                            <button id="G2" class="btn py-4 px-10 rounded-xl text-[#03071280]">G2</button>
+                            <button id="G3" class="btn py-4 px-10 rounded-xl text-[#03071280]">G3</button>
+                            <button id="G4" class="btn py-4 px-10 rounded-xl text-[#03071280]">G4</button>
+                        </div>
+                        <!-- H -->
+                        <div class="inter grid grid-cols-5 gap-2">
+                            <p>A</p>
+                            <button id="H1" class="btn py-4 px-10 rounded-xl text-[#03071280]">H1</button>
+                            <button id="H2" class="btn py-4 px-10 rounded-xl text-[#03071280]">H2</button>
+                            <button id="H3" class="btn py-4 px-10 rounded-xl text-[#03071280]">H3</button>
+                            <button id="H4" class="btn py-4 px-10 rounded-xl text-[#03071280]">H4</button>
+                        </div>
+                        <!-- I -->
+                        <div class="inter grid grid-cols-5 gap-2">
+                            <p>A</p>
+                            <button id="I1" class="btn py-4 px-10 rounded-xl text-[#03071280]">I1</button>
+                            <button id="I2" class="btn py-4 px-10 rounded-xl text-[#03071280]">I2</button>
+                            <button id="I3" class="btn py-4 px-10 rounded-xl text-[#03071280]">I3</button>
+                            <button id="I4" class="btn py-4 px-10 rounded-xl text-[#03071280]">I4</button>
+                        </div>
+                        <!-- J-->
+                        <div class="inter grid grid-cols-5 gap-2 ">
+                            <p>J</p>
+                            <button id="J1" class="btn py-4 px-10 rounded-xl text-[#03071280]">J1</button>
+                            <button id="J2" class="btn py-4 px-10 rounded-xl text-[#03071280]">J2</button>
+                            <button id="J3" class="btn py-4 px-10 rounded-xl text-[#03071280]">J3</button>
+                            <button id="J4" class="btn py-4 px-10 rounded-xl text-[#03071280]">J4</button>
+                        </div>
+    
+                    </div>
+    
+                </div>
+                           <!-- form part -->
+
+                     <div>
+               <div class="border-b-1 border-dashed">
+                <h1 class="font-semibold text-2xl mb-6">Select Your Seat</h1>
+               </div>
+                
+                  
+                <div class="w-[433px] 
+                min-h-[335px] bg-[#F7F8F8] rounded-xl mt-6  p-8 inter">
+                   <div class="flex
+                   justify-between">
+                    <div class="space-y-4 text-center">
+                        <p>Sit</p>
+                        <p>C2</p>
+                        <p>C2</p>
+                       </div>
+                       <div class="space-y-4 text-center">
+                        <p>Class</p>
+                        <p>Economy</p>
+                        <p>Economy</p>
+                       </div>
+                       <div class="space-y-4 text-center">
+                        <p>Price</p>
+                        <p>500</p>
+                        <p>500</p>
+                        
+                       </div>
+                   </div>
+                   <br>
+                   <hr>
+                   <br>
+                   <div class="flex justify-between items-center">
+                    <p>Total Price</p>
+                    <p>BDT <span> 1100</span></p>
+                   </div>
+                   <div class="flex justify-center items-center my-4">
+                    <div class="">
+                      <input type="text" placeholder="Have any copupon?" class="p-3 bg-white border-none rounded-xl">
+                      <button class="btn bg-[#1DD100] p-5 rounded-r-xl ">Apply</button>
+                  </div>
+                   
+                </div>
+                <div class="flex justify-between items-center">
+                    <p>Grand Total</p>
+                    <p>BDT <span>1100</span></p>
+                </div>
+
+                
+                    
+                     </div>
+                   <!-- field set -->
+                     <div class=" ">
+                        <fieldset class="fieldset w-full  border-base-300 p-4 rounded-box">
+                            
+                            
+                            
+                            <label class="fieldset-label font-extrabold">Passenger Name*
+
+                            </label>
+                            <input type="text" class=" p-5 rounded-xl border-[#0307121A]" placeholder="Enter your name" />
+
+                            <label class="fieldset-label font-extrabold">Phone Number*</label>
+                            <input type="text" class="p-5 rounded-xl border-[#0307121A]" placeholder="Enter your phone number" />
+
+                            <label class="fieldset-label font-extrabold">Email ID</label>
+                            <input type="email" class="p-5 rounded-xl border-[#0307121A]" placeholder="Enter your email id" />
+                            
+                            <button class="btn bg-[#1DD100] mt-4 rounded-2xl text-white font-extrabold py-7">Next</button>
+                          </fieldset>
+                     </div>
+
+             </div>
+            
+
+ 
+
+        </section>
+
+    </main>
+
+    <footer>
+        <footer class="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
+            <aside>
+              <svg
+                width="50"
+                height="50"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                class="fill-current">
+                <path
+                  d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"></path>
+              </svg>
+              <p>
+                Empire Express
+                <br />
+                Providing reliable Service since 2000
+              </p>
+            </aside>
+            <nav>
+              <h6 class="footer-title">Social</h6>
+              <div class="grid grid-flow-col gap-4">
+                <a>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    class="fill-current">
+                    <path
+                      d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+                  </svg>
+                </a>
+                <a>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    class="fill-current">
+                    <path
+                      d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+                  </svg>
+                </a>
+                <a>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    class="fill-current">
+                    <path
+                      d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+                  </svg>
+                </a>
+              </div>
+            </nav>
+          </footer>
+    </footer>
+</body>
+
+</html>
+
+<!-- <div class="join">
+                    <input class="input join-item" placeholder="Email" />
+                    <button class="btn join-item rounded-r-full">Subscribe</button>
+                  </div> -->
+                <!-- inputBox -->
+                <!-- <fieldset class="fieldset w-xs bg-base-200 border border-base-300 p-4 rounded-box">
