@@ -18,7 +18,7 @@
 </head>
 
 <body class="raleway">
-    <header class="w-[1171px] mx-auto mt-8 ">
+    <header id="header" class="w-[1171px] mx-auto mt-8 ">
         <!-- nav bar section -->
         <section class="nav-bar">
             <div class="navbar  ">
@@ -74,7 +74,7 @@
                         <p class="py-6 inter text-white">
                             Each journey brings its own story, turning ordinary moments into unforgettable
                             experiences,turning ordinary moments into unforgettable experiences. <br>
-                            <button class="btn font-bold  border-none rounded-xl  bg-[#1DD100] mt-10 text-[#030712]">Buy
+                            <button onclick="scrollToTicket()" class="btn font-bold  border-none rounded-xl  bg-[#1DD100] mt-10 text-[#030712]">Buy
                                 Tickets</button>
                     </div>
                 </div>
@@ -86,7 +86,7 @@
 
     <main>
         <!-- offer section -->
-        <section class="w-[1171px] mx-auto flex flex-col items-center  mt-20 mb-32">
+        <section id="offerSection" class="w-[1171px] mx-auto flex flex-col items-center  mt-20 mb-32">
 
             <h1 class=" text-[#030712] font-bold text-4xl mb-16">Best offers for you</h1>
 
@@ -143,7 +143,7 @@
 
         </section>
         <!-- ticketing section-->
-        <section class="bg-[#F7F8F8] border-t-2 border-[#1DD100] rounded-t-[88px]
+        <section id="ticket-section" class="bg-[#F7F8F8] border-t-2 border-[#1DD100] rounded-t-[88px]
         ">
             <!-- title section -->
             <div class="flex flex-col items-center mb-12 mt-[120px]">
@@ -173,7 +173,7 @@
 
                         <div class="w-[180px] h-[56px] bg-[#1DD10026] flex p-5 items-center justify-between rounded-xl">
                             <img src="images/seat-green.png" alt="">
-                            <p class="light-green text-lg font-medium inter">40 Seats left</p>
+                            <p class="light-green text-lg font-medium inter"><span id="count-1">40</span>  Seats left</p>
 
                         </div>
                     </div>
@@ -220,7 +220,7 @@
             </div>
 
             <!-- function section -->
-             <div class="w-[1170px] mx-auto bg-white flex justify-between  p-10 mt-6 ">
+             <div id="scroll2" class="w-[1170px] mx-auto bg-white flex justify-between  p-10 mt-6 ">
                 <!-- sit part -->
                 <div class="">
                     <h1 class="font-semibold text-2xl mb-6">Select Your Seat</h1>
@@ -233,21 +233,21 @@
     
                     <!-- keyBoard -->
     
-                    <div class="space-y-4">
+                    <div id="select" class="space-y-4">
                         <!-- keyA -->
     
                         <div class="inter grid grid-cols-5 gap-2">
                             <p>A</p>
-                            <button class="btn py-4 px-10 rounded-xl text-[#03071280]">A1</button>
-                            <button class="btn py-4 px-10 rounded-xl text-[#03071280]">A2</button>
-                            <button class="btn py-4 px-10 rounded-xl text-[#03071280]">A3</button>
-                            <button class="btn py-4 px-10 rounded-xl text-[#03071280]">A4</button>
+                            <button id="A1" class="btn py-4 px-10 rounded-xl text-[#03071280]">A1</button>
+                            <button id="A2" class="btn py-4 px-10 rounded-xl text-[#03071280]">A2</button>
+                            <button id="A3" class="btn py-4 px-10 rounded-xl text-[#03071280]">A3</button>
+                            <button id="A4" class="btn py-4 px-10 rounded-xl text-[#03071280]">A4</button>
     
                         </div>
                         <!-- b -->
                         <div class="inter grid grid-cols-5 gap-2">
-                            <p>A</p>
-                            <button id="B1" class="btn py-4 px-10 rounded-xl text-[#03071280]">B1</button>
+                            <p>B</p>
+                            <button  id="B1" class="btn py-4 px-10 rounded-xl text-[#03071280]">B1</button>
                             <button id="B2" class="btn py-4 px-10 rounded-xl text-[#03071280]">B2</button>
                             <button id="B3" class="btn py-4 px-10 rounded-xl text-[#03071280]">B3</button>
                             <button id="B4" class="btn py-4 px-10 rounded-xl text-[#03071280]">B4</button>
@@ -270,7 +270,7 @@
                         </div>
                         <!-- E -->
                         <div class="inter grid grid-cols-5 gap-2">
-                            <p>A</p>
+                            <p>E</p>
                             <button id="E1" class="btn py-4 px-10 rounded-xl text-[#03071280]">E1</button>
                             <button id="E2" class="btn py-4 px-10 rounded-xl text-[#03071280]">E2</button>
                             <button id="E3" class="btn py-4 px-10 rounded-xl text-[#03071280]">E3</button>
@@ -278,7 +278,7 @@
                         </div>
                         <!-- F -->
                         <div class="inter grid grid-cols-5 gap-2">
-                            <p>A</p>
+                            <p>F</p>
                             <button id="F1" class="btn py-4 px-10 rounded-xl text-[#03071280]">F1</button>
                             <button id="F2" class="btn py-4 px-10 rounded-xl text-[#03071280]">F2</button>
                             <button id="F3" class="btn py-4 px-10 rounded-xl text-[#03071280]">F3</button>
@@ -286,7 +286,7 @@
                         </div>
                         <!-- G -->
                         <div class="inter grid grid-cols-5 gap-2">
-                            <p>A</p>
+                            <p>G</p>
                             <button id="G1" class="btn py-4 px-10 rounded-xl text-[#03071280]">G1</button>
                             <button id="G2" class="btn py-4 px-10 rounded-xl text-[#03071280]">G2</button>
                             <button id="G3" class="btn py-4 px-10 rounded-xl text-[#03071280]">G3</button>
@@ -294,7 +294,7 @@
                         </div>
                         <!-- H -->
                         <div class="inter grid grid-cols-5 gap-2">
-                            <p>A</p>
+                            <p>H</p>
                             <button id="H1" class="btn py-4 px-10 rounded-xl text-[#03071280]">H1</button>
                             <button id="H2" class="btn py-4 px-10 rounded-xl text-[#03071280]">H2</button>
                             <button id="H3" class="btn py-4 px-10 rounded-xl text-[#03071280]">H3</button>
@@ -302,7 +302,7 @@
                         </div>
                         <!-- I -->
                         <div class="inter grid grid-cols-5 gap-2">
-                            <p>A</p>
+                            <p>I</p>
                             <button id="I1" class="btn py-4 px-10 rounded-xl text-[#03071280]">I1</button>
                             <button id="I2" class="btn py-4 px-10 rounded-xl text-[#03071280]">I2</button>
                             <button id="I3" class="btn py-4 px-10 rounded-xl text-[#03071280]">I3</button>
@@ -333,9 +333,9 @@
                    <div class="flex
                    justify-between">
                     <div class="space-y-4 text-center">
-                        <p>Sit</p>
-                        <p>C2</p>
-                        <p>C2</p>
+                        <p>Sit <span id="count-2" class="bg-[#1DD100] font-semibold px-2 rounded-full">0</span></p>
+                        <p id="sit-1">C1</p>
+                        <p id="sit-2">C2</p>
                        </div>
                        <div class="space-y-4 text-center">
                         <p>Class</p>
@@ -344,8 +344,8 @@
                        </div>
                        <div class="space-y-4 text-center">
                         <p>Price</p>
-                        <p>500</p>
-                        <p>500</p>
+                        <p>550</p>
+                        <p>550</p>
                         
                        </div>
                    </div>
@@ -354,18 +354,19 @@
                    <br>
                    <div class="flex justify-between items-center">
                     <p>Total Price</p>
-                    <p>BDT <span> 1100</span></p>
+                    <p>BDT <span id="count-3">0</span></p>
                    </div>
                    <div class="flex justify-center items-center my-4">
                     <div class="">
-                      <input type="text" placeholder="Have any copupon?" class="p-3 bg-white border-none rounded-xl">
-                      <button class="btn bg-[#1DD100] p-5 rounded-r-xl ">Apply</button>
+                      <input id="coupon-code"  type="text" placeholder="Have any coupon?" class="p-3 bg-white border-none rounded-l-md focus:outline-none h-full ">
+
+                      <button id="apply" class="btn bg-[#1DD100] p-5  rounded-r-md -ml-1 h-[46px]" disabled>Apply</button>
                   </div>
                    
                 </div>
                 <div class="flex justify-between items-center">
                     <p>Grand Total</p>
-                    <p>BDT <span>1100</span></p>
+                    <p>BDT <span id="count-4">0</span></p>
                 </div>
 
                 
@@ -382,13 +383,13 @@
                             </label>
                             <input type="text" class=" p-5 rounded-xl border-[#0307121A]" placeholder="Enter your name" />
 
-                            <label class="fieldset-label font-extrabold">Phone Number*</label>
-                            <input type="text" class="p-5 rounded-xl border-[#0307121A]" placeholder="Enter your phone number" />
+                            <label  class="fieldset-label font-extrabold">Phone Number*</label>
+                            <input id="phoneNumber" type="text" class="p-5 rounded-xl border-[#0307121A]" placeholder="Enter your phone number" />
 
                             <label class="fieldset-label font-extrabold">Email ID</label>
                             <input type="email" class="p-5 rounded-xl border-[#0307121A]" placeholder="Enter your email id" />
                             
-                            <button class="btn bg-[#1DD100] mt-4 rounded-2xl text-white font-extrabold py-7">Next</button>
+                            <button class="btn bg-[#1DD100] mt-4 rounded-2xl text-white font-extrabold py-7 " id="nextBtn" disabled>Next</button>
                           </fieldset>
                      </div>
 
@@ -399,7 +400,7 @@
 
         </section>
         <!-- successful ticket -->
-         <section class="min-h-screen bg-[#F2F1F1] flex justify-center  items-center hidden">
+         <section id="successScreen" class="min-h-screen bg-[#F2F1F1] flex justify-center  items-center hidden">
             <div class="h-[481px] w-[718px] bg-white border rounded-2xl inter flex flex-col items-center justify-center p-14 gap-8">
                 <img src="images/success.png" alt="">
                 <p class="text-[#27AE60] text-2xl font-semibold">SUCCESS</p>
@@ -407,7 +408,7 @@
                     We are working hard to find the best service and deals for you. 
                    </p>
                    <p class="text-[#4A4A4A] text-lg font-light"> Shortly you will find a confirmation in your email.</p>
-                   <button class="btn font-semibold text-lg bg-[#27AE60]  rounded-full text-white py-4 px-14 "> Continue</button>
+                   <button onclick="againPurchase()" class="btn font-semibold text-lg bg-[#27AE60]  rounded-full text-white py-4 px-14 "> Continue</button>
 
             </div>
 
@@ -415,7 +416,7 @@
 
     </main>
 
-    <footer>
+    <footer id="footer">
         <footer class="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
             <aside>
               <svg
@@ -475,6 +476,11 @@
             </nav>
           </footer>
     </footer>
+
+<!-- js script section -->
+ <script src="busticket.js"></script>
+ <script src="utility.js"></script>
+
 </body>
 
 </html>
