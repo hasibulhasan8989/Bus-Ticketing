@@ -26,9 +26,20 @@ function clickMouse(event) {
   const count3 = getIntValue('count-3') + 550
   setTextValue('count-3', count3)
 
-  setTextValue('sit-1',press)
-  setTextValue('eco','Economy')
-  setTextValue('price',550)
+  // setTextValue('sit-1',press)
+
+  ecoPush('Class')
+  pricePush('Price')
+  sitPush('Sit',press)
+  
+
+  
+ 
+  
+
+
+  
+
   
  
 
@@ -81,10 +92,17 @@ function success() {
   document.getElementById('apply').classList.remove('hidden')
   document.getElementById('coupon-code').classList.remove('hidden')
   document.getElementById('apply').disabled=true;
+  document.getElementById('nextBtn').disabled=true;
   document.getElementById('coupon-code').value=''
-  setTextValue('sit-1','-')
-  setTextValue('eco','-')
-  setTextValue('price','-')
+
+ pop1('dynamic')
+ 
+
+  
+  
+  
+  
+  
 
 
 
@@ -125,4 +143,65 @@ function applyCoupon() {
     alert('Wrong coupon')
   }
 }
+
+function ecoPush(id){
+  const box= document.getElementById(id)
+  const push= document.createElement('p')
+  push.innerText='Economy'
+  push.classList.add('dynamic')
+   box.appendChild(push)
+}
+function pricePush(id){
+  const box= document.getElementById(id)
+  const push= document.createElement('p')
+  push.innerText=550
+  push.classList.add('dynamic')
+   box.appendChild(push)
+}
+
+function sitPush(id,value){
+  const box= document.getElementById(id)
+  const push= document.createElement('p')
+  push.innerText=value
+  push.classList.add('dynamic')
+   box.appendChild(push)
+}
+
+// function ecoPop(id){
+  
+//   const pop =document.getElementById(id)
+//   const popHtml= pop.innerHTML=`<p>Class</p>`
+//     pop.appendChild(popHtml)
+
+
+// }
+// function pricePop(id){
+  
+//   const pop =document.getElementById(id)
+//   const popHtml= pop.innerHTML=`<p>Price</p>`
+//     pop.appendChild(popHtml)
+
+
+// }
+// function sitPop(id){
+  
+//   const pop =document.getElementById(id)
+//   const popHtml= pop.innerHTML=`<p>Sit <span id="count-2" class="bg-[#1DD100] font-semibold px-2 rounded-full">0</span></p>`
+//     pop.appendChild(popHtml)
+
+
+// }
+
+
+function pop1(className) {
+  const elements = document.getElementsByClassName(className);
+  for (let element of elements) {
+    element.innerText = ''; // clears the text of each element
+  }
+}
+
+
+
+
+
 
