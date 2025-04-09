@@ -18,7 +18,7 @@
 </head>
 
 <body class="raleway">
-    <header id="header" class="w-[1171px] mx-auto mt-8 ">
+    <header id="header" class=" lg:w-[1171px] lg:mx-auto mt-8 mx-2 ">
         <!-- nav bar section -->
         <section class="nav-bar">
             <div class="navbar  ">
@@ -65,10 +65,10 @@
 
         <!-- Hero section -->
         <section class="hero-section mt-9 ">
-            <div class="hero bg-[url(images/banner.png)] min-h-[550px]">
+            <div class="hero bg-[url(images/banner.png)] lg:min-h-[550px] md:min-w-full rounded-2xl">
                 <div class="hero-content text-center">
                     <div class="max-w-3xl">
-                        <h1 class="text-6xl font-extrabold text-white">End-to-End Travel with <br>
+                        <h1 class="lg:text-6xl text-4xl font-extrabold text-white">End-to-End Travel with <br>
                             <span class="light-green">Empire Express</span>
                         </h1>
                         <p class="py-6 inter text-white">
@@ -86,18 +86,18 @@
 
     <main>
         <!-- offer section -->
-        <section id="offerSection" class="w-[1171px] mx-auto flex flex-col items-center  mt-20 mb-32">
+        <section id="offerSection" class="lg:w-[1171px] lg:mx-auto flex flex-col items-center mt-20 lg:mb-32 mb-20">
 
             <h1 class=" text-[#030712] font-bold text-4xl mb-16">Best offers for you</h1>
 
             <!-- card container -->
-            <div class=" flex gap-9 ">
+            <div class=" flex lg:flex-row flex-col gap-9 ">
 
                 <!-- card1 -->
                 <div>
 
-                    <div class="card bg-[#FFBF0F] text-primary-content w-[573px] inter text-[#030712] rounded-3xl">
-                        <div class=" flex justify-between p-12 items-center">
+                    <div class="card bg-[#FFBF0F] text-primary-content lg:w-[573px] w-[380px] mx-auto inter text-[#030712] rounded-3xl">
+                        <div class=" flex justify-between lg:p-12 p-6  items-center">
                             <div class="space-y-2">
                                 <h2 class="card-title font-black text-4xl">15% OFF</h2>
                                 <p class=" text-xl ">on your next purchase</p>
@@ -116,8 +116,8 @@
                 <!-- card2 -->
                 <div>
 
-                    <div class="card bg-[#F78C9C] text-primary-content w-[573px] inter text-[#030712] rounded-3xl">
-                        <div class=" flex justify-between p-12 items-center">
+                    <div class="card bg-[#F78C9C] text-primary-content lg:w-[573px] w-[380px] inter text-[#030712] rounded-3xl">
+                        <div class=" flex justify-between lg:p-12 p-6 items-center">
                             <div class="space-y-2">
                                 <h2 class="card-title font-black text-4xl">20% OFF</h2>
                                 <p class=" text-xl ">on your next purchase</p>
@@ -146,7 +146,7 @@
         <section id="ticket-section" class="bg-[#F7F8F8] border-t-2 border-[#1DD100] rounded-t-[88px]
         ">
             <!-- title section -->
-            <div class="flex flex-col items-center mb-12 mt-[120px]">
+            <div class="flex flex-col items-center mb-12 lg:mt-[120px] mt-10">
                 <h1 class="text-[#030712] font-bold text-4xl">Empire Express</h1>
                 <p class="mt-6 text-[#03071299] inter">Each journey weaves a unique story, turning fleeting moments into
                     timeless , <br> <span class="ml-12">In the quiet pauses, we discover beauty that lasts
@@ -155,7 +155,8 @@
             <!-- ticket print section -->
 
             <div
-                class="w-[1170px] min-h-[418px] border mx-auto bg-white rounded-3xl flex gap-[134px] p-10 items-center">
+                class="lg:w-[1170px] min-h-[418px] border lg:mx-auto bg-white rounded-3xl flex lg:flex-row flex-col lg:gap-[134px] p-10 items-center gap-8
+                mx-8">
 
                 <div>
 
@@ -179,7 +180,7 @@
                     </div>
                     <!-- route part -->
 
-                    <div class="w-[808px] h-[258px] rounded-3xl bg-[#F7F8F8] space-y-12 p-10 mt-4">
+                    <div class="lg:w-[808px] h-[258px] rounded-3xl bg-[#F7F8F8] space-y-12 p-10 mt-4">
                         <div
                             class="text-lg flex justify-between items-center border-b-1 border-[#03071233] border-dashed ">
                             <p>Route</p>
@@ -192,7 +193,7 @@
                             <p>9:00 PM</p>
                         </div>
 
-                        <div class="flex justify-between">
+                        <div class="flex  justify-between ">
                             <button class="btn ">Boarding Point - Laxmipur</button>
                             <button class="btn">Dropping Point - Bogura</button>
                             <button class="btn">Est. Time - 11 Hour</button>
@@ -220,13 +221,13 @@
             </div>
 
             <!-- function section -->
-             <div id="scroll2" class="w-[1170px] mx-auto bg-white flex justify-between  p-10 mt-6 ">
+             <div id="scroll2" class=" lg:w-[1170px] mx-auto bg-white flex lg:flex-row flex-col justify-between gap-7  p-10 mt-6 ">
                 <!-- sit part -->
                 <div class="">
-                    <h1 class="font-semibold text-2xl mb-6">Select Your Seat</h1>
+                    <h1 class="font-semibold text-2xl mb-6">Select Your Seat <span></span></h1>
     
                     <div class="flex  border-t-1 border-dashed justify-between items-center ">
-                        <p class="text-[#03071280] font-semibold my-10">Available</p>
+                        <p class=" font-semibold my-10">Available <span class="text-xs text-[#03071280]">(select 4 seat to active Coupon)</span></p>
     
                         <img src="images/seat-green-filled.png" alt="">
                     </div>
@@ -328,7 +329,7 @@
                </div>
                 
                   
-                <div class="w-[433px] 
+                <div class=" lg:w-[433px] 
                 min-h-[335px] bg-[#F7F8F8] rounded-xl mt-6  p-8 inter">
                    <div class="flex
                    justify-between">
@@ -364,7 +365,7 @@
                     <p>Total Price</p>
                     <p>BDT <span id="count-3">0</span></p>
                    </div>
-                   <div class="flex justify-center items-center my-4">
+                   <div class="flex justify-end lg:justify-center items-center my-4">
                     <div class="">
                       <input id="coupon-code"  type="text" placeholder="Have any coupon?" class="p-3 bg-white border-none rounded-l-md focus:outline-none h-full ">
 
@@ -395,8 +396,9 @@
                             </label>
                             <input type="text" class=" p-5 rounded-xl border-[#0307121A]" placeholder="Enter your name" />
 
-                            <label  class="fieldset-label font-extrabold">Phone Number*</label>
-                            <input id="phoneNumber" type="text" class="p-5 rounded-xl border-[#0307121A]" placeholder="Enter your phone number" />
+                            <label  class="fieldset-label font-extrabold ">Phone Number*</label>
+                            <input id="phoneNumber" type="text" class="p-5 rounded-xl border-[#0307121A]
+                            text-red-600 font-semibold" placeholder="Enter your phone number" />
 
                             <label class="fieldset-label font-extrabold">Email ID</label>
                             <input type="email" class="p-5 rounded-xl border-[#0307121A]" placeholder="Enter your email id" />
